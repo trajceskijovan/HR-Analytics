@@ -10,7 +10,7 @@ https://github.com/trajceskijovan/HR-Analytics/blob/main/Presentation.pdf
 # Analytical Insights Samples:
 
 
-![](samples/1.png)
+![](samples/HR Analytics_Page_16.png)
 
 ![](samples/HR Analytics_Page_04.png)
 
