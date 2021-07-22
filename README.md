@@ -8,4 +8,4 @@ https://github.com/trajceskijovan/HR-Analytics/blob/main/Code.R
 https://github.com/trajceskijovan/HR-Analytics/blob/main/Presentation.pdf
 
 # Analytical Insights Samples:
-
+![](samples/SQL1.png)
