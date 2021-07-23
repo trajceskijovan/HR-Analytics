@@ -5,7 +5,7 @@ HR Analytics in Rmarkdown
 https://github.com/trajceskijovan/HR-Analytics/blob/main/Code.R
 
 # Presentation (deck):
-https://github.com/trajceskijovan/HR-Analytics/blob/main/Presentation.pdf
+https://github.com/trajceskijovan/HR-Analytics/blob/main/HR%20Analytics.pdf
 
 # Analytical Insight Samples:
 ![](samples/1.PNG)
