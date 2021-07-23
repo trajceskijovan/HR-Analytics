@@ -1,5 +1,5 @@
 # HR-Analytics
-HR Analytics in Rmarkdown
+HR Analytics in R Script
 
 # Code:
 https://github.com/trajceskijovan/HR-Analytics/blob/main/Code.R
