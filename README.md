@@ -5,7 +5,7 @@ HR Analytics in R Script: "Why Employees leave the company?"
 https://github.com/trajceskijovan/HR-Analytics/blob/main/Code.R
 
 # Presentation (deck):
-https://github.com/trajceskijovan/HR-Analytics/blob/main/HR%20Analytics.pdf
+https://github.com/trajceskijovan/HR-Analytics/blob/main/Presentation.pdf
 
 # Highlighting few insights*:
 
