@@ -9,7 +9,7 @@ https://github.com/trajceskijovan/HR-Analytics/blob/main/HR%20Analytics.pdf
 
 # Highlight few insights*:
 
-* for more details please review the presentation linked above
+     * for more details please review the presentation linked above
 
 
 ![](samples/1.PNG)
