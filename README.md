@@ -7,7 +7,7 @@ https://github.com/trajceskijovan/HR-Analytics/blob/main/Code.R
 # Presentation (deck):
 https://github.com/trajceskijovan/HR-Analytics/blob/main/HR%20Analytics.pdf
 
-# Highlight few insights*:
+# Highlighting few insights*:
 
      * for more details please review the presentation linked above
 
