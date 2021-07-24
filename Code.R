@@ -1,16 +1,18 @@
+# -----------------------------------------------------------------
+# Jovan Trajceski
+# Topic: HR Analytics
+# -----------------------------------------------------------------
+
 library(ROSE)
-
 library(tidyverse) 
-
 library(modelr) 
-
 library(broom)
 library(caret)
 
 data = read.csv('HR_comma_sep.csv')
 attach(data)
 
-# # Overview of summary (Turnover V.S. Non-turnover)
+# Overview of summary (Turnover V.S. Non-turnover)
 # cor_vars<-data_set[,c("satisfaction_level","last_evaluation","number_project","average_montly_hours","exp_in_company","Work_accident","left","promotion_last_5years")]
 # 
 # aggregate(cor_vars[,c("satisfaction_level","last_evaluation","number_project","average_montly_hours","exp_in_company","Work_accident","promotion_last_5years")], by=list(Category=cor_vars$left), FUN=mean)
@@ -60,7 +62,7 @@ cm1
 #m1.acc = (cm1[1,1] + cm1[2,2]) / (cm1[1,1] + cm1[2,2] + cm1[1,2] + cm1[2,1])
 
 
-#####   Build the model with balanced dataset(over sampling)  #####
+#####   Build the model with balanced dataset(over-sampling)  #####
 data_balanced_over <- ovun.sample(left ~ ., data = data2, method = "over",N = 22856)$data
 table(data_balanced_over$left)
 
@@ -83,7 +85,7 @@ summary(m2)
 (m2.right = sum(as.numeric(test2$left == m2.class)))
 (m2.acc = mean(as.numeric(test2$left == m2.class)))
 
-#####   Build the model with balanced dataset(under sampling)  #####
+#####   Build the model with balanced dataset(under-sampling)  #####
 data_balanced_under <- ovun.sample(left ~ ., data = data2, method = "under",N = 7142)$data
 table(data_balanced_under$left)
 
@@ -434,7 +436,7 @@ BothPreROC <- roc(test4$left ~ test4$pred_both_pre,plot=TRUE,print.auc=TRUE,col=
 BothPostROC <- roc(test4$left ~ test4$pred_both_post,plot=TRUE,print.auc=TRUE,col="cyan3",lwd =4,print.auc.y=0.5,legacy.axes=TRUE,add = TRUE)
 ## Setting levels: control = 0, case = 1
 ## Setting direction: controls < cases
-#svmROC <- roc(vdata_Y ~ svm_predict,plot=TRUE,print.auc=TRUE,col="blue",lwd = 4,print.auc.y=0.4,legacy.axes=TRUE,add = TRUE)
+# svmROC <- roc(vdata_Y ~ svm_predict,plot=TRUE,print.auc=TRUE,col="blue",lwd = 4,print.auc.y=0.4,legacy.axes=TRUE,add = TRUE)
 ## Setting levels: control = 0, case = 1 ## Setting direction: controls < cases
 # legend("topright",inset = c(-2.4,0),legend=c("OverBaseROC","OverPreROC","OverPostROC",
 #                          "UnderBaseROC", "UnderPreROC", "UnderPostROC",
@@ -491,7 +493,7 @@ emp_turnover_satisfaction <-mean(left_pop$satisfaction_level)
 print( c('The mean for the employee population is: ', emp_population_satisfaction) )
 print( c('The mean for the employees that had a turnover is: ' ,emp_turnover_satisfaction) )
 
-##Distribution Plots (Satisfaction - Evaluation - AverageMonthlyHours)
+# Distribution Plots (Satisfaction - Evaluation - AverageMonthlyHours)
 par(mfrow=c(1,3))
 hist(data$satisfaction_level, col="green")
 hist(data$last_evaluation, col="red")
