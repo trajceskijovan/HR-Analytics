@@ -7,7 +7,11 @@ https://github.com/trajceskijovan/HR-Analytics/blob/main/Code.R
 # Presentation (deck):
 https://github.com/trajceskijovan/HR-Analytics/blob/main/HR%20Analytics.pdf
 
-# Analytical Insight Samples:
+# Highlight few insights*:
+
+* for more details please review the presentation linked above
+
+
 ![](samples/1.PNG)
 
 ![](samples/2.PNG)
