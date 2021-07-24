@@ -1,5 +1,5 @@
 # HR-Analytics
-HR Analytics in R Script
+HR Analytics in R Script: "Why Employees leave the company?"
 
 # Code:
 https://github.com/trajceskijovan/HR-Analytics/blob/main/Code.R
