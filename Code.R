@@ -573,32 +573,3 @@ ggplot(data, aes(satisfaction_level, last_evaluation, color = left)) +
 
 
 
-
-# #Evaluation
-# # Prediction (Testing data)
-# predict1 = predict(decision_tree_over, newdata=test2[,-7], type="class")
-# test_acc1 = mean(test2$left==predict1)
-# 
-# # Prediction (Training data)
-# predict0 = predict(decision_tree_over, newdata = train2[,-7], type="class")
-# test_acc0 = mean(train2$left==predict0)
-# 
-# 
-# 
-# decision_tree <- rpart(left ~., data = train3, method = 'class')
-# rpart.plot(decision_tree, extra = 104)
-# decision_tree$variable.importance #variable importance
-# 
-# #C5imp(decision_tree,metric = "usage", pct=TRUE)
-# 
-# library(C50)
-# train2$left = as.factor(train2$left)
-# mod1 = C5.0(x=train2[,c(1,2,3,4,5,6,8,9,10,11,12,13,14,15,16,17,18,19)],y=train2$left,
-#             control=C5.0Control(minCases = 100))
-# mod1
-# summary(mod1)
-# library(partykit)
-# plot(mod1, main="Classification Tree (Model 1)",
-#      type="simple",
-#      gp = gpar(fontsize=10))
-
